@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none !important;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    height: auto;
+
+    .container {
+        display: flex;
+        min-height: 65px;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            border-style: solid;
+            padding: 5px;
+            color: black;
+        }
+
+        .forList {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 44%;
+            gap: 20px;
+
+            p {
+                font-size: 14px;
+                font-family: Poppins, sans-serif;
+                font-weight: 600;
+                color: #000;
+
+                &:hover {
+                    color: #F41068;
+                }
+            }
+
+            a {
+                text-decoration: none !important;
+            }
+        }
+
+        .dropdown {
+            display: none;
+
+            button {
+                background-color: transparent !important;
+                border: none;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                padding-left: 15px;
+
+                p {
+                    font-size: 14px;
+                    font-family: Poppins, sans-serif;
+                    font-weight: 600;
+                    color: #222;
+
+                }
+
+                a {
+                    text-decoration: none !important;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width:800px) {
+    header {
+        .container {
+            .forList {
+                display: none;
+            }
+
+            .dropdown {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#thisSeason {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #F039AA;
+
+    img {
+        width: 100%;
+        min-height: 450px;
+    }
+
+    .thisTxt {
+        width: 100%;
+        min-height: 200px;
+        color: white;
+
+        h1 {
+            font-size: 65px;
+            font-weight: 800;
+        }
+
+        button {
+            width: 150px;
+            border-radius: 20px;
+            background-color: white;
+            min-height: 40px;
+            border: none;
+            font-weight: 600;
+            font-size: 14px;
+
+            &:hover {
+                background-color: #F41068;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #thisSeason {
+        .thisTxt {
+            h1 {
+                font-size: 35px;
+            }
+
+        }
+    }
+}
+
+
+
+
+#shopFor {
+    width: 100%;
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .shop {
+        width: 100%;
+        min-height: 650px;
+
+        .shopTxt {
+            width: 100%;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+#newRealeasedMen {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url('/assets/img/men-bg.jpg');
+
+    .newMen {
+        width: 100%;
+        min-height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color: #F253D4, $alpha: 0.9);
+        color: white;
+
+        .newMenTxt {
+            width: 100%;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+
+#newRealeasedWomen {
+    width: 100%;
+    text-align: center;
+    margin-top: 4%;
+
+    .newWomenTxt {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    #product {
+        margin-bottom: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .boxs {
+            margin-top: 20px;
+        }
+
+        .divz {
+            border: 1px solid gray;
+            box-shadow: 0 0 8px 8px gray;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            button {
+                width: 100px;
+                height: 50px;
+                background-color: #F039AA;
+                color: white;
+                border: none;
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: #F41068;
+                    color: black;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .divc {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+
+#relatedSearched {
+    width: 100%;
+    text-align: center;
+    margin-top: 4%;
+
+    .relatedTxt {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .col-xl-3 {
+        margin-bottom: 4%;
+
+        .clothes {
+            display: flex;
+
+        }
+
+    }
+}
+
+
+footer {
+    margin-top: 4%;
+    text-align: center;
+    min-height: 100px;
+    background-color: #5D5D60;
+
+    h4 {
+
+        font-size: 16px;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+// Basket Wishlist 
+
+#api{
+    width: 100%;
+    
+    #productz {
+        min-height: 300px;
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        font-weight: 600;
+        color: black;
+        flex-wrap: wrap;
+    
+        .divz {
+    
+            border: 1px solid gray;
+            box-shadow: 0 0 8px 8px gray;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px;
+    
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+    
+            .divc {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            button {
+                width: 130px;
+                height: 50px;
+                background-color: #F039AA;
+                color: white;
+                border: none;
+    
+                &:hover {
+                    background-color: #F41068;
+                    color: black;
+                }
+    
+                margin: 3%;
+            }
+        }
+    }
+}
+
+
